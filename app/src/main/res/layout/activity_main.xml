@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1de9b6"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toparea"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtwrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textSize="50sp"
+            />
+        <TextView
+            android:id="@+id/txtprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:textSize="50sp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/functionButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/numbers"
+        android:layout_toRightOf="@id/numbers"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/btnDel"
+            style="@style/FunctionButtonStyle"
+            android:text="del"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/FunctionButtonStyle"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/btnMultiple"
+            style="@style/FunctionButtonStyle"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/FunctionButtonStyle"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/FunctionButtonStyle"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toparea"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/buttonStyle"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/buttonStyle"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/buttonStyle"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/buttonStyle"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/buttonStyle"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/buttonStyle"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/buttonStyle"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/buttonStyle"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/buttonStyle"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/buttonStyle"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/buttonStyle"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                style="@style/buttonStyle"
+                android:text="=" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
